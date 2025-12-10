@@ -9,4 +9,7 @@ void main(){
     printf("Enter Number b: \n");
     scanf("%f",&b);
     printf("Sum Of a and b is: %f",a+b);
+    printf("Subtraction Of a and b is: %f",a+b);
+    printf("Multiplication Of a and b is: %f",a+b);
+    printf("Division Of a and b is: %f",a+b);
 }
