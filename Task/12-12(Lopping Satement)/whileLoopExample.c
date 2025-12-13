@@ -12,7 +12,7 @@ void main()
     while(true)
     {
         printf("Enter 1 To Order Pizza \nEnter 2 To Oreder Burger \nEnter 3 To Order Coffee \nEnter 4 To Exit\n");
-    scanf("%d",&choice);
+        scanf("%d",&choice);
       
         switch(choice)
         {
