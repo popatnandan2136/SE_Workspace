@@ -1,25 +1,22 @@
-//   * * * * *
-//    * * * *
-//     * * *
-//      * *
-//       *
+// *****  *****
+// ****    ****
+// ***      ***
+// **        **
+// *          *
 #include<stdio.h>
 #include<conio.h>
 void main(){
     int i,j;
     for(i=5;i>=1;i--){
         for(j=1;j<=i;j++){
-            printf("* ");
+            printf("*");
         }
-
         for(int space=0;space<=5-i;space++){
-            printf(" ");
+            printf("  ");
         }
-
         for(j=1;j<=i;j++){
-            printf("* ");
+            printf("*");
         }
-        
         printf("\n");
     }
 }
