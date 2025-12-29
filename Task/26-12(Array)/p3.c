@@ -1,4 +1,4 @@
-// Number Of Words
+// Number Of Words Without Function
 #include <stdio.h>
 #include <conio.h>
 

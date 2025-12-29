@@ -1,4 +1,4 @@
-// Number Of Letters Without Built In Function
+// Number Of Letters Without Function
 #include<stdio.h>
 #include<conio.h>
 void main(){
