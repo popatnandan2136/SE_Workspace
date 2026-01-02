@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<string.h>
 void main(){
     FILE *fp;
     int choice;
@@ -22,7 +23,7 @@ void main(){
             printf("Enter Paasword:");
             scanf("%s",&password);
 
-            fprintf(fp,"Name: %s\nEmail:%s\nPassword:%s\n",name,email,password);   
+            fprintf(fp,"Name:%s\nEmail:%s\nPassword:%s\n",name,email,password);   
             fclose(fp);
             break;
 
@@ -40,23 +41,23 @@ void main(){
                 printf("Enter Password: ");
                 scanf("%s",&loginpassword);
 
-                 while(fscanf(fp,"%s\n%s\n",&email,&password)!=EOF)
-                 {
-                       if(strcmp(loginemail,email)){
-                            if(strcmp(loginpassword,password)){
-                                printf("Login Successfully");
-                            }
-                            else{
-                                printf("Invalid Password");
-                            }
+                fscanf(fp, "Name:%s\n", name);
+                fscanf(fp, "Email:%s\n", email);
+                fscanf(fp, "Password:%s\n", password);
+
+                fclose(fp);
+
+                    if(strcmp(loginemail,email)==0){
+                        if(strcmp(loginpassword,password)==0){
+                            printf("Login Successfully");
                         }
                         else{
-                            printf("Invalid Email");
+                            printf("Invalid Password");                            }
                         }
+                    else{
+                        printf("Invalid Email");
+                    }
                 }
-            }
-
     }
-
 
 }
