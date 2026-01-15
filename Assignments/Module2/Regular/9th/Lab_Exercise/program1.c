@@ -1,21 +1,34 @@
-// Write a C program that stores 5 integers in a one-dimensional array and prints them.
-// Extend this to handle a two-dimensional array (3x3 matrix) and calculate the sum of all elements.	 
-
 #include <stdio.h>
 #include <conio.h>
-#include <string.h>
 void main()
 {
    
-  int arr[5];
+  int arr[3][3],arr2[3][3],sumArray[3][3];
   int sum=0,i,j;
    
-  for(i=0;i<5;i++){
-      printf("Enter Number %d:",i+1);
-      scanf("%d",&arr[i]);
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        printf("Enter Number For Array 1 [%d][%d]:",i+1,j+1);
+        scanf("%d",&arr[i][j]);
+    }
   }
-  for(i=0;i<5;i++){
-      printf("Number: %d: %d\n",i+1,arr[i]);
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        printf("Enter Number For Array 2 [%d][%d]:",i+1,j+1);
+        scanf("%d",&arr2[i][j]);
+    }
   }
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        sumArray[i][j] = arr[i][j]+arr2[i][j];
+    }
+  }
+  printf("\nSum of two matrices:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d ", sumArray[i][j]);
+        }
+        printf("\n");
+    }
 }
     
