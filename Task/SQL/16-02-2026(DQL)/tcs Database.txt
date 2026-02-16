@@ -1,0 +1,24 @@
+1.CREATE DATABASE tcs;
+2.CREATE TABLE employee(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    surname VARCHAR(50),
+    salary INT,
+    city VARCHAR(50));
+3.
+INSERT INTO employee (name,surname,salary,city) VALUES ('nandan','popat','500000','rajkot');
+INSERT INTO employee (name,surname,salary,city) VALUES ('yash','cmj','100000','rajkot');
+INSERT INTO employee (name,surname,salary,city) VALUES ('akash','dmjc','200000','baroda');
+INSERT INTO employee (name,surname,salary,city) VALUES ('mahima','jcfnj','300000','baroda');
+INSERT INTO employee (name,surname,salary,city) VALUES ('richa','mfjc','400000','surat');
+4.SELECT * FROM employee;
+5.
+SELECT salary FROM employee WHERE id=1;
+SELECT salary FROM employee WHERE name='nandan';
+6.SELECT * FROM employee WHERE name='nandan';
+7.SELECT name,salary,city FROM employee WHERE name='nandan';
+8.SELECT * FROM employee ORDER BY salary ASC;
+9.SELECT * FROM employee ORDER BY salary DESC;
+10.SELECT MAX(salary) from employee
+11.SELECT MAX(salary) AS seconhighest from employee where salary<(SELECT MAX(salary) from employee);//INTERVIEW
+DDL//query 10
