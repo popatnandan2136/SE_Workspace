@@ -1,0 +1,92 @@
+---------------DDL---------------
+DDL: Data Definition Language.
+
+Commands Are: Create, Alter, Rename, Truncate, Drop.
+
+Create: Create database/table (database/table)_name.
+
+Alter: Alter Table Tabl_Name ADD:Add_Column/
+ADD _____ AFTER _____ :Add Column After Perticular Column Name/
+MODIFY:Data_Type/
+CHANGE:Column_Name/
+DROP:Drop Column
+
+RENAME:Rename Table Name.
+
+TRUNCATE:Delete All Records From Table And Schema Remains As It Is.
+
+DROP:Drop The Table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Create Database:
+CREATE DATABASE database_name
+CREATE DATABASE nandan;
+
+2.Create Table:
+CREATE TABLE TABLE_NAME(colname datatype...)
+CREATE TABLE mytable(id INT PRIMARY AUTO_INCREMENT,name varchar(30),mobile INT);
+
+3.Add Column:
+ALTER TABLE TABLE_NAME ADD colname datatype
+ALTER TABLE mytable ADD city varchar(30);
+
+4.Particular Column After Column:
+ALTER TABLE TABLE_NAME ADD colname datatype AFTER colname
+ALTER TABLE mytable ADD email varchar(50) AFTER mobile;
+
+5.Change Datatype:
+ALTER TABLE TABLE_NAME MODIFY colname datatype
+ALTER TABLE mytable  MODIFY email int;
+
+6.Change Column name:
+ALTER TABLE TABLE_NAME CHANGE oldcol newcol datatype
+ALTER TABLE mytable CHANGE email pincode int;
+
+7.Drop Column:
+ALTER TABLE TABLE_NAME DROP colname
+ALTER TABLE mytable DROP Pincode;
+
+8.8)Rename Table:
+RENAME TABLE TABLE_NAME to NEWTABLE_NAME
+RENAME TABLE mytable to nandantable;
+
+9.Truncate Table:
+TRUNCATE TABLE TABLE_NAME
+TRUNCATE TABLE nandantable;
+
+10.Drop Table:
+DROP TABLE TABLE_NAME
+DROP TABLE nandantable;

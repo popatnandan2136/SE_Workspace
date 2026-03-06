@@ -21,4 +21,7 @@ SELECT salary FROM employee WHERE name='nandan';
 9.SELECT * FROM employee ORDER BY salary DESC;
 10.SELECT MAX(salary) from employee
 11.SELECT MAX(salary) AS seconhighest from employee where salary<(SELECT MAX(salary) from employee);//INTERVIEW
+12.
+SELECT * FROM employee LIMIT 1
+SELECT * FROM employee ORDER BY salary ASC LIMIT 2
 DDL//query 10
